@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
 </head>
 <body>
     <!-- <div w3-include-html="components/header.html"></div> -->
@@ -109,27 +108,27 @@
     </div>
     <script src="js/main.js" type="text/javascript"></script>
     <script type="text/javascript">
-        w3IncludeHTML();
         window.onload(
-            createLandingButton("Read blog","https://goo.gle/android11-recap-blog"),
-            createLandingButton("Get the beta","https://g.co/androidbeta"),
-            createBannerButton("Read more","https://android-developers.googleblog.com/2020/07/android-11-beta-2-and-platform-stability.html"),
-
+            render()
+        );
+        function render() {
+            createLandingButton("Read blog","https://goo.gle/android11-recap-blog");
+            createLandingButton("Get the beta","https://g.co/androidbeta");
+            createBannerButton("Read more","https://android-developers.googleblog.com/2020/07/android-11-beta-2-and-platform-stability.html");
             //talks
-            createTalk("https://developer.android.com/images/android11/talks/whats-new-in-android_480.png", "https://youtu.be/fnkFOhA7FC4", "What's new in Android"),
-            createTalk("https://developer.android.com/images/android11/talks/whats-new-in-system-ui_480.png", "https://youtu.be/oLLUDOQxJS8", "What's new in System UI"),
-            createTalk("https://developer.android.com/images/android11/talks/privacy-in-android-11_480.png", "https://youtu.be/5w5h_UdIiqs", "All things Privacy in Android 11"),
-            createTalk("https://developer.android.com/images/android11/talks/storage-access-with-android_480.png", "https://youtu.be/RjyYCUW-9tY", "Storage access with Android 11"),
-            createTalk("https://developer.android.com/images/android11/talks/state-of-kotlin_480.png", "https://youtu.be/AgPj1Q6D--c", "State of Kotlin in Android"),
-            createTalk("https://developer.android.com/images/android11/talks/jetpack-compose_480.png", "https://youtu.be/U5BwfqBpiWU", "Get composed"),
-            createTalk("https://developer.android.com/images/android11/talks/new-in-android-jetpack_480.png", "https://youtu.be/R3caBPj-6Sg", "What's new in Android Jetpack"),
-            createTalk("https://developer.android.com/images/android11/talks/new-in-development-tools_480.png", "https://youtu.be/NMFGuy6TRqk", "What's new in Android Dev Tools"),
-            createTalk("https://developer.android.com/images/android11/talks/new-in-design-tools_480.png", "https://youtu.be/ns67AAuDs4s", "What's new in Design Tools"),
-            createTalk("https://developer.android.com/images/android11/talks/new-in-google-play_480.png", "https://youtu.be/cMr-b660Esw", "What's new in Google Play"),
-            createTalk("https://developer.android.com/images/android11/talks/new-in-play-commerce_480.png", "https://youtu.be/gnrNckXeSjQ", "What's new in Play Commerce"),
-            createTalk("https://developer.android.com/images/android11/talks/developing-for-foldables_480.png", "https://youtu.be/llHMxCz2Jig", "Screens - large, small, and foldable"),
-
-            //cards
+            createTalk("https://developer.android.com/images/android11/talks/whats-new-in-android_480.png", "https://youtu.be/fnkFOhA7FC4", "What's new in Android");
+            createTalk("https://developer.android.com/images/android11/talks/whats-new-in-system-ui_480.png", "https://youtu.be/oLLUDOQxJS8", "What's new in System UI");
+            createTalk("https://developer.android.com/images/android11/talks/privacy-in-android-11_480.png", "https://youtu.be/5w5h_UdIiqs", "All things Privacy in Android 11");
+            createTalk("https://developer.android.com/images/android11/talks/storage-access-with-android_480.png", "https://youtu.be/RjyYCUW-9tY", "Storage access with Android 11");
+            createTalk("https://developer.android.com/images/android11/talks/state-of-kotlin_480.png", "https://youtu.be/AgPj1Q6D--c", "State of Kotlin in Android");
+            createTalk("https://developer.android.com/images/android11/talks/jetpack-compose_480.png", "https://youtu.be/U5BwfqBpiWU", "Get composed");
+            createTalk("https://developer.android.com/images/android11/talks/new-in-android-jetpack_480.png", "https://youtu.be/R3caBPj-6Sg", "What's new in Android Jetpack");
+            createTalk("https://developer.android.com/images/android11/talks/new-in-development-tools_480.png", "https://youtu.be/NMFGuy6TRqk", "What's new in Android Dev Tools");
+            createTalk("https://developer.android.com/images/android11/talks/new-in-design-tools_480.png", "https://youtu.be/ns67AAuDs4s", "What's new in Design Tools");
+            createTalk("https://developer.android.com/images/android11/talks/new-in-google-play_480.png", "https://youtu.be/cMr-b660Esw", "What's new in Google Play");
+            createTalk("https://developer.android.com/images/android11/talks/new-in-play-commerce_480.png", "https://youtu.be/gnrNckXeSjQ", "What's new in Play Commerce");
+            createTalk("https://developer.android.com/images/android11/talks/developing-for-foldables_480.png", "https://youtu.be/llHMxCz2Jig", "Screens - large, small, and foldable");
+            //stay in the loop cards
             createStayInLoopCard(
                 "https://developer.android.com/images/android11/meetups.svg",
                 "https://developer.android.com/android11/meetups",
@@ -137,7 +136,7 @@
                 "Android 11 meetups",
                 "A global series of online community meetups to discuss what’s new in Android 11, how to make your app compatible, and the essentials and best practices of modern Android development.",
                 "View meetups"
-            ),
+            );
             createStayInLoopCard(
                 "https://developer.android.com/images/android11/11weeks.svg",
                 "https://developer.android.com/11weeksofandroid",
@@ -145,8 +144,7 @@
                 "11 Weeks of Android",
                 "Follow along as each week we deep dive into different Android topics, with new content in areas like UI, Android Jetpack and Machine Learning.",
                 "View schedule"
-            ),
-
+            );
             //learn more cards
             createLearnMoreCard(
                 "https://developer.android.com/images/android11/get-ready.svg",
@@ -155,7 +153,7 @@
                 "Get your apps ready.",
                 "Technical resources to take advantage of new Android 11 features and understand what changes you should prepare for in your apps.",
                 "Get started"
-            ),
+            );
             createLearnMoreCard(
                 "https://developer.android.com/images/android11/android-studio-beta.svg",
                 "https://developer.android.com/studio/preview",
@@ -163,7 +161,7 @@
                 "Android Studio 4.1 Beta and 4.2 Canary are here",
                 "Updates include faster Kotlin annotation processing, parallel device testing, wireless debugging, new Android Game Development extension for Visual Studio, and much more.",
                 "Try it out"
-            ),
+            );
             createLearnMoreCard(
                 "https://developer.android.com/images/android11/jetpack-compose-preview.svg",
                 "https://developer.android.com/jetpack/compose",
@@ -171,7 +169,7 @@
                 "Jetpack Compose Developer Preview 2",
                 "This new release is packed with features you've been asking about, like Constraint Layout, Testing, and Animations.",
                 "Learn more"
-            ),
+            );
             createLearnMoreCard(
                 "https://developer.android.com/images/android11/google-play-console.svg",
                 "https://play.google.com/console",
@@ -179,7 +177,7 @@
                 "The new Google Play Console in public Beta",
                 "The completely redesigned Google Play Console is now clearer and easier to use, and provides more ways to get the answers you need.",
                 "Join the beta"
-            ),
+            );
             createLearnMoreCard(
                 "https://developer.android.com/images/android11/mad.svg",
                 "https://developer.android.com/modern-android-development",
@@ -187,7 +185,7 @@
                 "Modern Android Development",
                 "Development tools, APIs, language, and distribution technologies recommended by the Android team to help you be productive and create better apps that run across billions of devices.",
                 "Learn More"
-            ),
+            );
             createLearnMoreCard(
                 "https://developer.android.com/images/android11/jetpack-libraries.svg",
                 "https://medium.com/androiddevelopers/whats-new-in-jetpack-1891d205e136",
@@ -195,8 +193,8 @@
                 "New Android Jetpack libraries!",
                 "Introducing three new Android Jetpack libraries: Hilt, App Startup, and Paging 3.",
                 "Learn more"
-            ),
-        );
+            );
+        }
     </script>
 </body>
 
