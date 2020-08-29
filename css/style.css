@@ -92,6 +92,34 @@ p{
     margin-bottom: 30px;
     grid-row-end: end;
 }
+#talks{
+    width: 100%;
+    background: #eff7cf;
+    display: flex;
+}
+.talk{
+    width: 25%;
+    margin: 25px;
+    border: 3px solid #3ddc84;
+    box-shadow: 10px 10px #3ddc84;
+    padding-bottom: 20px;
+    background: #ffffff;
+}
+.img_wrap img{
+    width: 100%;
+}
+.talk_content{
+    padding: 20px;
+}
+.youtube{
+    margin: 20px 0;
+}
+.talk_title{
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: black;
+}
 @media screen and (max-width:500px){
     #landing_content{
         width: 85%;

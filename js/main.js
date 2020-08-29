@@ -22,8 +22,41 @@ function createBannerButton(text, url){
 }
 
 //creates talk
-function createTalk(params) {
+function createTalk(url, href, titleText) {
     let talk = document.createElement('div');
-    let text = document.createElement('p');
+    Object.assign(talk,{
+        className: "talk"
+    })
+    let img_wrap = document.createElement('a')
+    Object.assign(img_wrap,{
+        className: "img_wrap",
+        href: href
+    })
+    let img = document.createElement('img');
+    Object.assign(img,{
+        src: url
+    })
+    let talk_content = document.createElement('div');
+    Object.assign(talk_content,{
+        className:"talk_content"
+    });
+    let youtube = document.createElement('p');
+    youtube.innerText="YOUTUBE"
+    Object.assign(youtube,{
+        className: "youtube"
+    });
     let title = document.createElement('a');
+    title.innerText=titleText
+    Object.assign(title,{
+        className: "talk_title",
+        href: href
+    });
+
+    //append elements to talk
+    img_wrap.appendChild(img);
+    talk_content.append(youtube,title);
+    talk.append(img_wrap,talk_content);
+
+    //append talk to talks
+    talks.appendChild(talk);
 }
