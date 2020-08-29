@@ -122,6 +122,9 @@ p{
     padding-bottom: 20px;
     background: #ffffff;
 }
+.img_wrap{
+    width: 100%;
+}
 .img_wrap img{
     width: 100%;
 }
@@ -162,6 +165,7 @@ p{
 }
 .card_img_wrap img{
     height: 300px;
+    width: 100%;
 }
 .cardTitle{
     font-size: 35px;
