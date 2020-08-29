@@ -4,8 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
 </head>
 <body>
-    
+    <!-- <div w3-include-html="components/header.html"></div> -->
+    <div id="top_banner"><p>Learn more about Android 11 Beta</p></div>
+
+    <div id="landing" class="center_column">
+        <div id="landing_logo">
+            <img src="https://developer.android.com/images/android11/beta.svg" alt="Android 11 beta">
+        </div>
+        
+        <div id="landing_content">
+            <a href="" class="title">Android 11 Beta is here</a>
+            <p>We’ve got all the important announcements you need for the beta launch here. Check out all the new features in the newest release of Android by downloading the Android 11 beta. Keep the conversation going using #Android11.</p>
+        </div>
+        <div id="landing_buttons">
+
+        </div>
+    </div>
+
+    <p id="divide">*available on Pixel 2, 3, 3a, 4, or 4a devices!</p>
+
+    <div id="banner" class="box_shadow">
+        <div id="banner_image" class="center">
+            <img alt="" src="https://developer.android.com/images/android11/beta-2-platform-stability.svg" srcset="" sizes="(max-width: 840px) 100vw, 952px" loading="lazy">
+        </div>
+        <div id="banner_content">
+            <p>JOIN THE BETA</p>
+            <a href="" class="title">Android 11 Beta 2 and Platform Stability.</a>
+            <p>Now that Android 11 APIs and behaviors are finalized, it’s time to make sure your apps are compatible. Read more about why this is important and how you can get your apps ready.</p>
+        </div>
+        <div id="banner_buttons">
+
+        </div>
+    </div>
+
+    <div id="talks">
+        
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        w3IncludeHTML();
+        window.onload(
+            createLandingButton("Read blog",""),
+            createLandingButton("Get the beta",""),
+            createBannerButton("Read more","")
+        );
+    </script>
 </body>
+
 </html>
