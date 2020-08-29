@@ -16,11 +16,11 @@ function buttonElemet(text, url){
     });
 }
 function createLandingButton(text, url){
-    buttonElemet(text, url)
+    buttonElemet(text, url);
     landing_buttons.appendChild(button);
 }
 function createBannerButton(text, url){
-    buttonElemet(text, url)
+    buttonElemet(text, url);
     banner_buttons.appendChild(button);
 }
 
@@ -29,16 +29,16 @@ function createTalk(url, href, titleText) {
     let talk = document.createElement('div');
     Object.assign(talk,{
         className: "talk"
-    })
+    });
     let img_wrap = document.createElement('a')
     Object.assign(img_wrap,{
         className: "img_wrap",
         href: href
-    })
+    });
     let img = document.createElement('img');
     Object.assign(img,{
         src: url
-    })
+    });
     let talk_content = document.createElement('div');
     Object.assign(talk_content,{
         className:"talk_content"
@@ -49,7 +49,7 @@ function createTalk(url, href, titleText) {
         className: "youtube"
     });
     let title = document.createElement('a');
-    title.innerText=titleText
+    title.innerText=titleText;
     Object.assign(title,{
         className: "talk_title",
         href: href
@@ -69,7 +69,7 @@ function createCard(image_url, href, sub_title, title_text, desc_text, button_te
     Object.assign(card,{
         className: "card box_shadow"
     });
-    let img_wrap = document.createElement('a')
+    let img_wrap = document.createElement('a');
     Object.assign(img_wrap,{
         className: "card_img_wrap center",
         href: href
@@ -102,5 +102,5 @@ function createStayInLoopCard(image_url, href, sub_title, title_text, desc_text,
 }
 function createLearnMoreCard(image_url, href, sub_title, title_text, desc_text, button_text) {
     createCard(image_url, href, sub_title, title_text, desc_text, button_text);
-    learnMore.appendChild(card)
+    learnMore.appendChild(card);
 }
