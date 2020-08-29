@@ -142,7 +142,7 @@ p{
 }
 #stayInLoop{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
 }
 #stayInLoop_con{
     padding: 30px;
@@ -164,8 +164,7 @@ p{
     width: 100%;
 }
 .card_img_wrap img{
-    height: 300px;
-    width: 100%;
+    width: 40%;
 }
 .cardTitle{
     font-size: 35px;
@@ -186,7 +185,7 @@ p{
 }
 #learnMore{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
 }
 #subscribe{
     background: #eff7cf;
@@ -242,10 +241,10 @@ input[type="text"]{
         grid-template-columns: 1fr 1fr;
     }
     #stayInLoop{
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
     }
     #learnMore{
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
     }
     .card{
         width: auto;
@@ -270,6 +269,9 @@ input[type="text"]{
     }
     #talks{
         grid-template-columns: 1fr;
+    }
+    .card_img_wrap img{
+        width: 100%;
     }
     form{
         margin: 15px;
